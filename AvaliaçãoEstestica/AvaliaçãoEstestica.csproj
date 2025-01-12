@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Form4.cs" />
+    <Compile Remove="Form4.Designer.cs" />
+    <Compile Remove="Form5.cs" />
+    <Compile Remove="Form5.Designer.cs" />
+    <Compile Remove="Form6.cs" />
+    <Compile Remove="Form6.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Form4.resx" />
+    <EmbeddedResource Remove="Form5.resx" />
+    <EmbeddedResource Remove="Form6.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+
+</Project>
